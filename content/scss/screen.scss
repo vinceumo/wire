@@ -27,7 +27,6 @@
 //vendors
 @import "vendors/bootstrap-reboot";
 @import "vendors/family";
-@import "vendors/icomoon/icomoon";
 
 // For accessibility testing to be remove in prod
 // @import "vendors/a11y/a11y-en";
@@ -87,6 +86,3 @@
 
 //templates
 @import "templates/main-template";
-
-//themes
-@import "themes/theme-invert";
