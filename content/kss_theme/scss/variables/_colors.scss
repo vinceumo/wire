@@ -4,28 +4,27 @@
 $color-prefix: --color-;
 $color-gray-prefix: --color-gray-;
 $color-themes: (
-  primary:
-    (
-      base: #4b7e9e,
-      dark: darken(#4b7e9e, 15%),
-      light: lighten(#4b7e9e, 20%),
-      transparent: transparentize(#4b7e9e, 0.5),
-      contrast: #ffffff
-    )
+  primary: (
+      base: hsl(205, 87%, 49%),
+      dark: hsl(205, 87%, 34%),
+      light: hsl(205, 87%, 64%),
+      transparent: hsla(205, 87%, 49%, 0.5),
+      contrast: hsl(0, 0%, 95%)
+  )
 );
 
 $gray-themes: (
-  0: #ffffff,
-  10: #f8f9fa,
-  20: #e9ecef,
-  30: #dee2e6,
-  40: #ced4da,
-  50: #adb5bd,
-  60: #6c757d,
-  70: #495057,
-  80: #343a40,
-  90: #212529,
-  100: #000000
+  0: hsl(0, 0%, 100%),
+  10: hsl(0, 0%, 95%),
+  20: hsl(0, 0%, 85%),
+  30: hsl(0, 0%, 75%),
+  40: hsl(0, 0%, 65%),
+  50: hsl(0, 0%, 54%),
+  60: hsl(0, 0%, 43%),
+  70: hsl(0, 0%, 33%),
+  80: hsl(0, 0%, 23%),
+  90: hsl(0, 0%, 13%),
+  100: hsl(0, 0%, 0%)
 );
 
 // ------------------------------

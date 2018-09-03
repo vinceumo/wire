@@ -1,3 +1,6 @@
+body{
+  background-color: color-gray(10);
+}
 .kss-page-container {
   &:not(.kss-is-full-width){
     @supports (display: grid) {

@@ -9,8 +9,8 @@ const cleanCSS = require('gulp-clean-css');
 const rename = require('gulp-rename');
 const purgeSourcemaps = require('gulp-purge-sourcemaps');
 
-const inputScss = "./content/scss/**/*.scss"; /*watches sub folders inside sass folder */
-const output = "./dist/css";
+const inputScss = "./content/kss_theme/scss/**/*.scss"; /*watches sub folders inside sass folder */
+const output = "./content/kss_theme/kss-assets/css";
 
 const sassOptions = {
     errLogToConsole: true,
