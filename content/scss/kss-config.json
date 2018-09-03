@@ -1,0 +1,18 @@
+{
+  "title": "Wire - UI/pattern library",
+  "source": "",
+  "mask": "*.scss",
+  "placeholder": "[modifier]",
+  "destination": "../../docs",
+  "builder": "../kss_theme/",
+  "css": [
+    "../dist/css/screen.css",
+    "../dist/css/themes/theme-invert.min.css",
+    "../dist/css/screen-fallback.css",
+    "../dist/css/screen-fallback-ie.css"
+  ],
+  "js": [
+    "../dist/js/atomic-bulldog.js",
+    "https://cdn.jsdelivr.net/gh/ireade/caniuse-embed/caniuse-embed.min.js"
+  ]
+}
