@@ -36,8 +36,7 @@
   }
 
   code {
-    background-color: color-gray(30);
-    border-radius: 5px;
+    background-color: color-gray(20);
     padding-left: spacer(1);
     padding-right: spacer(1);
   }
@@ -45,7 +44,7 @@
   blockquote {
     background-color: color-gray(10);
     padding: spacer(3);
-    border-left: spacer(2) solid color-gray(30);
+    border-left: spacer(2) solid color-gray(20);
     margin-bottom: spacer(3);
   }
 
@@ -63,7 +62,6 @@
   pre {
     margin: 0;
     padding: spacer(3);
-    border-radius: 5px;
   }
 
   pre code,
