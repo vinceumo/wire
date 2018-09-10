@@ -1,104 +1,102 @@
-$textual-form-inputs-class: "
-  input[type="email"],
-  input[type="number"],
-  input[type="password"],
-  input[type="tel"],
-  input[type="url"],
-  input[type="text"],
-  textarea,
-  select,
-  .input
-";
-
 $input-size: 22px;
 
 input {
   cursor: pointer;
 }
 
-#{$textual-form-inputs-class} {
+input[type="email"],
+input[type="number"],
+input[type="password"],
+input[type="tel"],
+input[type="url"],
+input[type="text"],
+textarea,
+select,
+.input {
   display: block;
-  border: 1px solid color-gray(50);
+  border: 2px solid color-gray(70);
+  background-color: color-gray(0);
   padding: spacer(2);
-  color: color(text);
-  transition: border-color 0.3s ease-in-out;
-  outline: none;
+  color: color(dark);
   width: 100%;
+  transition: border-color 0.3s ease-in-out;
+  margin-bottom: spacer(3);
+  overflow: hidden;
 
   &:hover {
-    border-color: color-gray(60);
+    border-color: color-gray(80);
   }
 
-  &:focus{
-    border-color: color(primary);
-    box-shadow:0 0 5px color(primary);
+  &:focus {
+    border-color: color(dark);
   }
 
   &::placeholder {
-    color: color-gray(50);
+    color: color-gray(76);
   }
 }
 
 input[type="radio"],
 input[type="checkbox"] {
-    width: $input-size;
-    height: $input-size;
+  width: $input-size;
+  height: $input-size;
 }
 
 .custom-input {
-    input[type="checkbox"], input[type="radio"] {
-        opacity: 0;
-        margin: 0;
-        width: 0;
-        height: 0;
+  input[type="checkbox"],
+  input[type="radio"] {
+    opacity: 0;
+    margin: 0;
+    width: 0;
+    height: 0;
 
-        &:checked {
-            & ~ .custom-input-indicator {
-                &:after {
-                    width: $input-size - 10;
-                    height: $input-size - 10;
-                }
-            }
-        }
-
-        &:focus {
-            & ~ .custom-input-indicator {
-                @include focus-style;
-            }
-        }
-    }
-
-    input[type="radio"] {
-        & ~ .custom-input-indicator {
-            border-radius: 50%;
-
-            &:after {
-                border-radius: 50%;
-            }
-        }
-    }
-
-    .custom-input-indicator {
-        display: inline-block;
-        width: $input-size;
-        height: $input-size;
-        background-color: color(light);
-        border: 1px solid color(secondary);
-        position: relative;
-        cursor: pointer;
-        margin-right: spacer(2);
-
+    &:checked {
+      & ~ .custom-input-indicator {
         &:after {
-            content: "";
-            background-color: color(secondary);
-            width: 0;
-            height: 0;
-            position: absolute;
-            top: 50%;
-            left: 50%;
-            transform: translate(-50%, -50%);
+          width: $input-size - 10;
+          height: $input-size - 10;
         }
+      }
     }
+
+    &:focus {
+      & ~ .custom-input-indicator {
+        @include focus-style;
+      }
+    }
+  }
+
+  input[type="radio"] {
+    & ~ .custom-input-indicator {
+      border-radius: 50%;
+
+      &:after {
+        border-radius: 50%;
+      }
+    }
+  }
+
+  .custom-input-indicator {
+    display: inline-block;
+    width: $input-size;
+    height: $input-size;
+    background-color: color(light);
+    border: 1px solid color(secondary);
+    position: relative;
+    cursor: pointer;
+    margin-right: spacer(2);
+
+    &:after {
+      content: "";
+      background-color: color(secondary);
+      width: 0;
+      height: 0;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+    }
+  }
 }
 // ------------------------------
 // KSS Documentation

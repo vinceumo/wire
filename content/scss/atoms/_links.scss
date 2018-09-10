@@ -1,0 +1,50 @@
+a {
+  color: color(dark);
+  text-decoration: underline;
+}
+
+a[href^="http://"],
+a[href^="https://"]{
+  &:not([href*="vinceumo.github.io"]):after{
+    content: "\01F517";
+    font-size: 0.8rem;
+  }
+}
+
+@each $name, $theme in $color-themes {
+  .has-bg-#{$name} {
+    a {
+      color: color($name, contrast);
+
+      &::before {
+        background-color: color($name, contrast);
+      }
+    }
+  }
+}
+
+// ------------------------------
+// KSS Documentation
+// ------------------------------
+
+// Links
+//
+// `hr` tag default style
+//
+// Markup:
+// <div class="has-bg-light has-p-3"> <!-- Just for KSS -->
+//  <p>
+//    <a href="#">Test link</a><br/>
+//    <a href="https://vinceumo.github.io">Test link inside domain</a><br/>
+//    <a href="https://google.co.uk">Test link outside domain</a>
+//  </p>
+// </div>
+// <div class="has-bg-dark has-p-3"> <!-- Just for KSS -->
+//  <p>
+//    <a href="#">Test link</a><br/>
+//    <a href="https://vinceumo.github.io">Test link inside domain</a><br/>
+//    <a href="https://google.co.uk">Test link outside domain</a>
+//  </p>
+// </div>
+//
+// Styleguide Atoms.Links

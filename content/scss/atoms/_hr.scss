@@ -1,0 +1,31 @@
+hr {
+  margin: spacer(2) 0;
+  border: 0;
+  border-bottom: 2px dashed color(dark);
+}
+
+@each $name, $theme in $color-themes {
+  .has-bg-#{$name} {
+    hr {
+      border-color: color($name, contrast);
+    }
+  }
+}
+
+// ------------------------------
+// KSS Documentation
+// ------------------------------
+
+// hr
+//
+// `hr` tag default style
+//
+// Markup:
+// <div class="has-bg-light has-p-3"> <!-- Just for KSS -->
+//  <hr>
+// </div>
+// <div class="has-bg-dark has-p-3"> <!-- Just for KSS -->
+//  <hr>
+// </div>
+//
+// Styleguide Atoms.hr

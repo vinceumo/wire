@@ -1,13 +1,11 @@
-// $textual-form-inputs-class is declare in atoms/form/inputs
-
 .form-group {
   margin-bottom: spacer(5);
 
-  .input-group{
-    .input-label{
+  .input-group {
+    .input-label {
       margin-right: spacer(3);
 
-      &:last-child{
+      &:last-child {
         margin-right: 0;
       }
     }
@@ -18,12 +16,20 @@
       display: block;
     }
 
-    #{$textual-form-inputs-class} {
+    input[type="email"],
+    input[type="number"],
+    input[type="password"],
+    input[type="tel"],
+    input[type="url"],
+    input[type="text"],
+    textarea,
+    select,
+    .input {
       border-color: color(success);
 
-      &:focus{
+      &:focus {
         border-color: color(success);
-        box-shadow:0 0 5px color(success);
+        box-shadow: 0 0 5px color(success);
       }
     }
   }
@@ -33,12 +39,20 @@
       display: block;
     }
 
-    #{$textual-form-inputs-class} {
+    input[type="email"],
+    input[type="number"],
+    input[type="password"],
+    input[type="tel"],
+    input[type="url"],
+    input[type="text"],
+    textarea,
+    select,
+    .input {
       border-color: color(danger);
 
-      &:focus{
+      &:focus {
         border-color: color(danger);
-        box-shadow:0 0 5px color(danger);
+        box-shadow: 0 0 5px color(danger);
       }
     }
   }
