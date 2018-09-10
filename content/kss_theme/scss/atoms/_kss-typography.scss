@@ -1,7 +1,6 @@
 @for $i from 1 through 6 {
   .kss-h#{$i} {
     color: color-gray(100);
-    font-family: font-family(title);
     font-size: font-size($i);
     margin-bottom: spacer(1);
     text-align: left;

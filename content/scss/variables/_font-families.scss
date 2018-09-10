@@ -1,18 +1,16 @@
 // ------------------------------
 // Import fonts
 // ------------------------------
-@import url('https://fonts.googleapis.com/css?family=Rubik');
-@import url("https://fonts.googleapis.com/css?family=Lato");
+@import url('https://fonts.googleapis.com/css?family=Asap:400,700');
 
 // ------------------------------
 // Sass Variables
 // ------------------------------
 $font-family-prefix: --font-family-;
 $font-families: (
-  paragraph: ("Lato", "Helvetica Neue", Arial, sans-serif),
-  title: ("Rubik", "Helvetica Neue", Arial, sans-serif),
-  highlight: ("Rubik", "Helvetica Neue", Arial, sans-serif),
-  icon: ('icomoon')
+  paragraph: ("Asap", "Helvetica Neue", Arial, sans-serif),
+  title: ("Asap", "Helvetica Neue", Arial, sans-serif),
+  highlight: ("Asap", "Helvetica Neue", Arial, sans-serif)
 );
 
 // ------------------------------
@@ -50,10 +48,9 @@ $font-families: (
 // Font Families are in the map `$font-families`
 //
 // ---------------
-// * `paragraph`: Lato,
-// * `title`: Rubik,
-// * `highlight`: Rubik
-// * `icon`: icomoon
+// * `paragraph`: Asap
+// * `title`: Asap
+// * `highlight`: Asap
 // ---------------
 //
 // Font Families can be called in the sass project using the functions:
