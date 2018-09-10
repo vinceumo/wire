@@ -10,8 +10,8 @@
 
 .kss-h1,
 .kss-h2 {
-  margin-top: 0;
-  padding-top: spacer(8);
+  margin-top: spacer(8);
+  padding-top: 0;
 }
 
 .kss-h3,
@@ -28,4 +28,8 @@
   .kss-section__ref {
     color: color(primary);
   }
+}
+
+.kss-section__permalink {
+  display: block;
 }

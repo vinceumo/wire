@@ -1,7 +1,5 @@
 ﻿@mixin focus-style {
-    outline-color: color(primary);
-    border-color: color(primary);
-    box-shadow: 0 0 5px color(primary);
+    outline: 3px solid color(focus);
 }
 
 // ------------------------------

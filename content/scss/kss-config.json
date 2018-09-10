@@ -3,16 +3,16 @@
   "source": "",
   "mask": "*.scss",
   "placeholder": "[modifier]",
-  "destination": "../../docs",
+  "destination": "../../dist/styleguide",
   "builder": "../kss_theme/",
   "css": [
-    "../dist/css/screen.css",
-    "../dist/css/themes/theme-invert.min.css",
-    "../dist/css/screen-fallback.css",
-    "../dist/css/screen-fallback-ie.css"
+    "../css/screen.css",
+    "../css/themes/theme-invert.min.css",
+    "../css/screen-fallback.css",
+    "../css/screen-fallback-ie.css"
   ],
   "js": [
-    "../dist/js/atomic-bulldog.js",
+    "../js/atomic-bulldog.js",
     "https://cdn.jsdelivr.net/gh/ireade/caniuse-embed/caniuse-embed.min.js"
   ]
 }

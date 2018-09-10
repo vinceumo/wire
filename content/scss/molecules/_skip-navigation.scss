@@ -1,4 +1,8 @@
 #skip-navigation {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  
   a {
     left: -999px;
     position: absolute;
