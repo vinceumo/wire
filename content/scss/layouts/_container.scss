@@ -3,7 +3,8 @@
   padding-left: 1rem;
 
   &:not(.is-fluid) {
-    margin: 0 auto;
+    margin-left: auto;
+    margin-right: auto;
 
     @each $bp, $container-size in $container-sizes {
       @include min(#{bp(#{$bp})}) {
@@ -11,6 +12,10 @@
         max-width: container(#{$bp});
       }
     }
+  }
+
+  &.is-narrow {
+    max-width: 600px;
   }
 }
 
@@ -39,6 +44,10 @@
 //
 // Styleguide Layout.Container.fluid
 
+// ------------------------------
+// //////////////////////////////
+// ------------------------------
+
 // Container fixed
 //
 // `.container`
@@ -54,3 +63,21 @@
 // </div>
 //
 // Styleguide Layout.Container.fixed
+
+// ------------------------------
+// //////////////////////////////
+// ------------------------------
+
+// Container narrow
+//
+// `.container.is-narrow`
+//
+// Narrow container is use to contain text content. It is set to pass [WCAG 2.0 success criterion 1.4.8](https://www.w3.org/TR/UNDERSTANDING-WCAG20/visual-audio-contrast-visual-presentation.html) `Width is no more than 80 characters or glyphs`
+//
+// markup:
+// <div class="container is-narrow">
+//     <h1>Lorem ipsum dolor</h1>
+//     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis, tempore laborum ipsum corrupti consequatur fugiat odio rerum voluptatum cupiditate consectetur modi fuga saepe sed assumenda voluptates porro debitis soluta exercitationem.</p>
+// </div>
+//
+// Styleguide Layout.Container.narrow

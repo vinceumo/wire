@@ -65,18 +65,6 @@
     @import "atoms/typography/titles";
     @import "atoms/typography/typography-global";
 
-    //modifiers
-    @import "atoms/modifiers/bg-color";
-    @import "atoms/modifiers/box-shadow";
-    @import "atoms/modifiers/display";
-    @import "atoms/modifiers/flex";
-    @import "atoms/modifiers/rounded";
-    @import "atoms/modifiers/spacing";
-    @import "atoms/modifiers/text-color";
-    @import "atoms/modifiers/text-font-family";
-    @import "atoms/modifiers/text-position";
-    @import "atoms/modifiers/text-transform";
-
 //molecules
 @import "molecules/form-group";
 @import "molecules/navigation";
@@ -88,3 +76,15 @@
 
 //templates
 @import "templates/main-template";
+
+//modifiers
+@import "atoms/modifiers/bg-color";
+@import "atoms/modifiers/box-shadow";
+@import "atoms/modifiers/display";
+@import "atoms/modifiers/flex";
+@import "atoms/modifiers/rounded";
+@import "atoms/modifiers/spacing";
+@import "atoms/modifiers/text-color";
+@import "atoms/modifiers/text-font-family";
+@import "atoms/modifiers/text-position";
+@import "atoms/modifiers/text-transform";
