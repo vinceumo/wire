@@ -6,7 +6,7 @@
   .grid {
     display: grid;
     grid-template-columns: repeat($grid-columns, minmax(0, 1fr));
-    grid-gap: spacer(1);
+    grid-gap: spacer(3);
 
     &.is-dense{
       grid-auto-flow: dense;

@@ -40,7 +40,6 @@
 
 //atoms
 @import "atoms/aspect-ratio-container";
-@import "atoms/box-shadow";
 @import "atoms/brand";
 @import "atoms/btn";
 @import "atoms/burger";
@@ -67,6 +66,7 @@
     @import "atoms/typography/typography-global";
 
 //molecules
+@import "molecules/card";
 @import "molecules/form-group";
 @import "molecules/navigation";
 @import "molecules/skip-navigation";
