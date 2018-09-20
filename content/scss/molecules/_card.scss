@@ -1,9 +1,40 @@
 .card {
   border: 3px dashed color(dark);
   padding: spacer(2);
+
+  a.card--header, a.card--main, a.card--footer {
+    display: block;
+    text-decoration: none;
+  }
+
+  @each $name, $theme in $color-themes {
+    &.has-bg-#{$name} {
+      border-color: color($name, base);
+    }
+  }
 }
 
 a.card {
   display: block;
   text-decoration: none;
 }
+
+// ------------------------------
+// KSS Documentation
+// ------------------------------
+
+// Navigation
+//
+// Styleguide Molecules.navigation
+
+// ------------------------------
+/////////////////////////////////
+// ------------------------------
+
+// Card
+//
+// Resize me
+//
+// markup:
+//
+// Styleguide Molecules.card
